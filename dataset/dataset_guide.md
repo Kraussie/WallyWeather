@@ -1,8 +1,8 @@
 # Introduction
-Using [this scraper](https://github.com/Kraussie/WallyWeather/blob/master/scraper/scrape.py) by [Max Fan](https://github.com/InnovativeInventor), we were able to collect 7,129 days worth of hourly weather data. This data was pulled from [api.weather.com](https://www.weather.com). The contents of each hourly observation are noted below for ease of use.
+Using [this scraper](https://github.com/Kraussie/WallyWeather/blob/master/scraper/scrape.py) by [Max Fan](https://github.com/InnovativeInventor), we were able to collect 27,821 days worth of hourly weather data. This data was pulled from [api.weather.com](https://www.weather.com). The contents of each hourly observation are noted below for ease of use.
 
 # Dataset Contents
-Currently, the dataset only contains one weather station located at Tweed Airport in New Haven, CT. The Folder is called ["KHVN"](https://github.com/Kraussie/WallyWeather/tree/master/dataset/khvn) and is 77.2 MB. 
+Currently, the dataset only contains weather stations located at Tweed Airport in New Haven, CT and LaGuardia Airport in New York, NY. The dataset is 507 MB. 
 
 # Dataset Guide
 | JSON Dictionary Key | Description | Example (01/01/1950) |
