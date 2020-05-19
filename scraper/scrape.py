@@ -18,12 +18,14 @@ def daterange(start_date = None, end_date = None):
         yield cursor_date
         cursor_date += datetime.timedelta(days=1)
 
-def fetch_weather(url = None, save=True, location="dataset/khvn/", verbose=True):
+def fetch_weather(url = None, save=True, location="dataset/", station="KHVN:9:US", verbose=True):
     """
     Fetches weather for all days given the proper URL
     """
+    location += station.split(":")[0].lower() + "/"
+
     if not url:
-        url = "https://api.weather.com/v1/location/KHVN:9:US/observations/historical.json?apiKey=6532d6454b8aa370768e63d6ba5a832e&units=e&startDate="
+        url = "https://api.weather.com/v1/location/{station}/observations/historical.json?apiKey=6532d6454b8aa370768e63d6ba5a832e&units=e&startDate=".format(station=station)
 
     for each_date in tqdm.tqdm(daterange()):
         date = each_date.strftime("%Y%m%d")
@@ -41,4 +43,6 @@ def fetch_weather(url = None, save=True, location="dataset/khvn/", verbose=True)
         
 
 if __name__ == "__main__":
-    fetch_weather()
+    with open("locations.txt") as f:
+        for each_station in f:
+            fetch_weather(station=each_station.rstrip())
