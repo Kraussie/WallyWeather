@@ -4,11 +4,12 @@ This is the final project in Choate Rosemary Hall's Machine Learning class (CS58
 
 ## Dataset
 Using [this scraper](https://github.com/Kraussie/WallyWeather/blob/master/scraper/scrape.py) by [Max Fan](https://github.com/InnovativeInventor), we were able to collect 7,129 days worth of hourly weather data. This data was pulled from [api.weather.com](https://www.weather.com). 
+We collected data from airports in New Haven, New York City, and Boston.
 
 \* More information about the dataset can be found [here](https://github.com/Kraussie/WallyWeather/blob/master/dataset/dataset_guide.md).
 
 ## Model
-The model was created in the Google Colab Notebook development enviornment and was trained over an X hour period. 
+The model was trained to predict the next hour of weather in Wallingford based on the previous twelve hours of weather from Wallingford, New York, and Boston. After X hours of training, the model was able to predict the weather Y percent more accurately than using the previous hour's weather as a guess for the next hour.
 
 \* More information about the model and its training can be found [here (not working yet)]().
 
