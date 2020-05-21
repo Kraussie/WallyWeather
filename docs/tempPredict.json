@@ -1,0 +1,26 @@
+[
+    {
+        "time" : "11 AM",
+        "temp" : 61
+    },
+    {
+        "time" : "12 PM",
+        "temp" : 64
+    },
+    {
+        "time" : "1 PM",
+        "temp" : 66
+    },
+    {
+        "time" : "2 PM",
+        "temp" : 67
+    },
+    {
+        "time" : "3 PM",
+        "temp" : 67
+    },
+    {
+        "time" : "4 PM",
+        "temp" : 66
+    }
+]
