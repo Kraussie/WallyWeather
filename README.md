@@ -11,7 +11,7 @@ We collected data from airports in New Haven, New York City, and Boston.
 ## Model
 The model was trained to predict the next hour of weather in Wallingford based on the previous twelve hours of weather from Wallingford, New York, and Boston. After X hours of training, the model was able to predict the weather Y percent more accurately than using the previous hour's weather as a guess for the next hour.
 
-\* More information about the model and its training can be found [here (not working yet)]().
+\* More information about the model and its training can be found [here](https://github.com/Kraussie/WallyWeather/tree/master/Model).
 
 ## User-Interface
 The culimination of this project comes together at https://natekrauss.me/WallyWeather. The website pulls the current weather data of Wallingford, CT and inputs that into the pre-trained model. Then, the model outputs a three-day prediction which is displayed to the user.
