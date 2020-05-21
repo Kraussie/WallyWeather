@@ -19,7 +19,7 @@
     <!--Weather Data script-->
     <script>
         $.getJSON("https://natekrauss.me/WallyWeather/weatherPredict.json", function(json) {
-            console.log(json); 
+            console.log(json[0].time); 
         });
     </script>
 
@@ -38,22 +38,22 @@
         <table class="centered striped">
             <thead>
                 <tr>
-                    <th>11 AM</th>
-                    <th>12 PM</th>
-                    <th>1 PM</th>
-                    <th>2 PM</th>
-                    <th>3 PM</th>
-                    <th>4 PM</th>
+                    <th id="time1">11 AM</th>
+                    <th id="time2">12 PM</th>
+                    <th id="time3">1 PM</th>
+                    <th id="time4">2 PM</th>
+                    <th id="time5">3 PM</th>
+                    <th id="time6">4 PM</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>61</td>
-                    <td>64</td>
-                    <td>66</td>
-                    <td>67</td>
-                    <td>67</td>
-                    <td>66</td>
+                    <td id="temp1">61</td>
+                    <td id="temp2">64</td>
+                    <td id="temp3">66</td>
+                    <td id="temp4">67</td>
+                    <td id="temp5">67</td>
+                    <td id="temp6">66</td>
                 </tr>
             </tbody>
         </table>
