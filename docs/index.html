@@ -7,15 +7,21 @@
     <title>WallyWeather | ML Project</title>
     <link rel="icon" href="https://i.pinimg.com/originals/7c/fe/8c/7cfe8c1126326bd450c36a6ea0d17961.png">
 
-    <!--Import jQuery + weather.js-->
+    <!--Import jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="weather.js"></script>
 
-    <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified CSS for materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--Weather Data script-->
+    <script>
+        $.getJSON("https://natekrauss.me/WallyWeather/prediction.json?raw=?", function(json) {
+            console.log(json); 
+        });
+    </script>
 
 </head>
 <body>
