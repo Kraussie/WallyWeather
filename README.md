@@ -3,7 +3,7 @@
 This is the final project in Choate Rosemary Hall's Machine Learning class (CS580-HO). Individually or in groups, we were supposed to use "interesting and open datasets" and "models using algorithms we can undersand and neural network architectures that we can study." As a team (Ian Haile, Nate Krauss, and Max Fan), we created our own weather dataset and model.
 
 ## Dataset
-Using [this scraper](https://github.com/Kraussie/WallyWeather/blob/master/scraper/scrape.py) by [Max Fan](https://github.com/InnovativeInventor), we were able to collect 7,129 days worth of hourly weather data. This data was pulled from [api.weather.com](https://www.weather.com). 
+Using [this scraper](https://github.com/Kraussie/WallyWeather/blob/master/scraper/scrape.py) by [Max Fan](https://github.com/InnovativeInventor), we were able to collect 51K+ days worth of hourly weather data. This data was pulled from [api.weather.com](https://www.weather.com). 
 We collected data from airports in New Haven, New York City, and Boston.
 
 \* More information about the dataset can be found [here](https://github.com/Kraussie/WallyWeather/blob/master/dataset/dataset_guide.md).
