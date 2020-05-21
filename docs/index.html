@@ -26,27 +26,53 @@
             </div>
         </nav>
     </div>
-    <div class = "row">
-        <div class ="col s12 m4 l4 xl4 center" style="background-color: #ffa726; min-height: 100vh">
-            <h1><b>TODAY</b></h1><hr style="border-color: black; width: 85%">
-            <br><br><i class="large material-icons">wb_sunny</i><br><br>
-            <h1>74°</h1>
-        </div>
-        <div class ="col s12 m4 l4 xl4 center" style="background-color: #bdbdbd; min-height: 100vh">
-            <h1><b>+1 DAY</b></h1><hr style="border-color: black; width: 85%">
-            <br><br><i class="large material-icons">wb_cloudy</i><br><br>
-            <h1>58°</h1>
-        </div>
-        <div class ="col s12 m4 l4 xl4 center" style="background-color: #0288d1; min-height: 100vh">
-            <h1><b>+2 DAYS</b></h1><hr style="border-color: black; width: 85%">
-            <br><br><i class="large material-icons">opacity</i><br><br>
-            <h1>46°</h1>
-        </div>
-    </div>
+
+    <div class="container center">
+        <h2 style="font-weight: bold;">Hourly Weather in Wallingford, CT</h2>
+        <table class="centered striped">
+            <thead>
+                <tr>
+                    <th>11 AM</th>
+                    <th>12 PM</th>
+                    <th>1 PM</th>
+                    <th>2 PM</th>
+                    <th>3 PM</th>
+                    <th>4 PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>61</td>
+                    <td>64</td>
+                    <td>66</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>66</td>
+                </tr>
+            </tbody>
+        </table>
+    </div><br><br>
+    <div class="container">
+        <h4><b>About the Project</b></h4><hr>
+        <h5>The Assignment:</h5>
+        <p>This is the final project in Choate Rosemary Hall's Machine Learning class (CS580-HO). Individually or in groups, we were supposed to use "interesting and open datasets" and "models using algorithms we can undersand and neural network architectures that we can study." As a team (Ian Haile, Nate Krauss, and Max Fan), we created our own weather dataset and model.</p>
+
+        <h5>The Data:</h5>
+        <p>Using <a href="https://github.com/Kraussie/WallyWeather/blob/master/scraper/scrape.py">this scraper</a> by <a href="https://github.com/InnovativeInventor">Max Fan</a>, we were able to collect 51K+ days worth of hourly weather data. This data was pulled from api.weather.com. We collected data from airports in New Haven, New York City, and Boston.</p>
+        <p>* More information about the dataset can be found <a href="dataset.html">here</a>.</p>
+
+        <h5>The Model:</h5>
+        <p>The model was trained to predict the next hour of weather in Wallingford based on the previous twelve hours of weather from Wallingford, New York, and Boston. After X hours of training, the model was able to predict the weather Y percent more accurately than using the previous hour's weather as a guess for the next hour.</p>
+        <p>* More information about the model can be found <a href="model.html">here</a>.</p>
+        
+        <h5>User-Interface:</h5>
+        <p>The culimination of this project comes together at <a href="https://natekrauss.me/WallyWeather">https://natekrauss.me/WallyWeather</a>. The website pulls the current weather data of Wallingford, CT and inputs that into the pre-trained model. Then, the model outputs a three-day prediction which is displayed to the user.</p>
+        <p>The website uses the <a href="https://materializecss.com/">Materialize CSS Framework</a> that allowed for fast UI development. The website is hosted on Github Pages and pulls the current predictions from a JSON file that is updated hourly.</p>
+    </div><br><br>
     <div class="blue center" style="margin-top: -25px">
         <div class="container">
             <br>
-            <p style="color: white; font-size: 18px;">This project was created by Ian Haile, <a href="https://natekrauss.me" style="color: white; text-decoration-color: white; text-decoration: underline; font-weight: bold;">Nate Krauss</a>, and Max Fan for a project in Choate Rosemary Hall's Machine Learning Class (CS580-HO).<br>Copyright (c) 2020 Ian Haile, Nathanial Krauss, and Max Fan under the <a href="https://github.com/Kraussie/Trump-Tweet-Bot/blob/master/LICENSE" style="color: white; text-decoration-color: white; text-decoration: underline;">MIT License</a></p>
+            <p style="color: white; font-size: 18px;">This project was created by Ian Haile, <a href="https://natekrauss.me" style="color: white; text-decoration-color: white; text-decoration: underline; font-weight: bold;">Nate Krauss</a>, and Max Fan for a project in Choate Rosemary Hall's Machine Learning Class (CS580-HO).<br>Copyright (c) 2020 Ian Haile, Nathanial Krauss, and Max Fan under the <a href="https://github.com/Kraussie/WallyWeather/blob/master/LICENSE" style="color: white; text-decoration-color: white; text-decoration: underline;">MIT License</a></p>
             <a href="privacy.html" style="font-size: 14px; color: white; text-decoration: underline;;">Privacy Policy</a><br><br>
         </div>
     </div>
